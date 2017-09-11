@@ -1,0 +1,19 @@
+# users-api crud service
+
+service:
+  name: users
+  description: 'Users CRUD service.'
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: prod
+  region: us-east-1
+
+functions:
+  register:
+    handler: handler.register
+    events:
+      - http:
+          path: /users
+          method: POST
