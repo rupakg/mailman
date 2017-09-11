@@ -1,0 +1,17 @@
+# A serverless service that sends out emails
+
+service:
+  name: email
+  description: 'A service for sending emails.'
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: prod
+  region: us-east-1
+
+functions:
+  sendWelcomeEmail:
+    handler: handler.sendWelcomeEmail
+    events:
+      - user.registered

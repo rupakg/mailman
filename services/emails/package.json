@@ -1,0 +1,14 @@
+{
+  "name": "email",
+  "version": "1.0.0",
+  "description": "A service for sending emails.",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rupak Ganguly",
+  "license": "MIT",
+  "dependencies": {
+    "@serverless/fdk": "^0.3.5"
+  }
+}
